@@ -1,0 +1,5 @@
+﻿<IfModule mod_rewrite.c>
+    Options +FollowSymlinks
+    RewriteEngine on
+    RewriteRule ^(.*)\/(.*)\/(.*)/$ App/Index.php?app=$1&act=$2&json=$3 [L]
+</IfModule>
